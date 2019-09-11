@@ -29,7 +29,7 @@ def get_fibonacci_huge_optimized(n, m):
 
     for i in range(n-1):
         previous, current = current, (previous + current) % m
-        period.append(current % m)
+        period.append(current)
         counter += 1
         half = counter // 2
 
